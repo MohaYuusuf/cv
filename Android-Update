@@ -1,1 +1,145 @@
 
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Home"
+    android:background="@color/orange">
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/bacnew">
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/upuserimgw"
+            />
+
+
+        <ImageView
+            android:id="@+id/imglanguagee"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/updenglishicon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtlanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:text="Somali"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="left Message"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnonlineticket"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/iconcard"
+            android:gravity="center"
+            android:text="Gooso ticket"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnonlineticket"
+            android:background="@drawable/shape"
+            android:text="Membership "
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/Widget.BottomNavigationView"
+        android:tint="@color/colorPrimary"
+        android:visibility="gone"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/color_white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/lyticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ticket"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/updateticketimgw" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
