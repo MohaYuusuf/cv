@@ -40,6 +40,9 @@ body {
         border-radius: 10%;
     }
 .footerData{
-    color:red;
+    text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
 }
 
