@@ -11,8 +11,6 @@ body {
          height: 5px;
      }
 
-
-
      h1{
          color: #66BFBF;
      }
@@ -29,7 +27,7 @@ body {
         background-color: royalblue;
     }
     .secondimg{
-        background-color: red;
+        background-color: royalblue;
     }
 
     .circular{
