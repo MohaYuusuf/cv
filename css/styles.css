@@ -1,5 +1,11 @@
 body {
-    background-color:#DFEEEA;
+/*     background-color:#DFEEEA;  */
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(http://placekitten.com/1000/1000);
+    background-size: cover;
+    background-attachment: fixed;
+ 
      }
  
      hr { 
